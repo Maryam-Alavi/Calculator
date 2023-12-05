@@ -35,11 +35,18 @@ def rem():
     print(str(first_number) + " %" + str(second_number) + " = " + str(answer))
 
 
+def pow():
+    """This is for powering two numbers"""
+    answer = float(first_number) ** float(second_number)
+    print(str(first_number) + " ** " + str(second_number) + " = " + str(answer))
+
+
 print("A. Addition")
 print("B. Subtraction")
 print("C. Multiplication")
 print("D. Divided")
 print("F. Remainder")
+print("P. Power")
 
 choice = input("input your choice: ")
 if choice in ("a", "A"):
@@ -72,3 +79,9 @@ elif choice in ("f", "F"):
     second_number = input("input the second number:")
     print("Remainder")
     rem()
+
+elif choice in ("p", "P"):
+    first_number = input("input the first number:")
+    second_number = input("input the second number:")
+    print("Power")
+    pow()
